@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DattingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200602094148_ExtendUserClass")]
-    partial class ExtendUserClass
+    [Migration("20200602151029_FullDbCreating")]
+    partial class FullDbCreating
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -79,7 +79,7 @@ namespace DattingApp.API.Migrations
                     b.Property<DateTime>("LastActive")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("LookinFor")
+                    b.Property<string>("LookingFor")
                         .HasColumnType("TEXT");
 
                     b.Property<byte[]>("PasswordHash")
